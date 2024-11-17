@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="899.0" stylesheets="@../style/estiloDetalles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.conjuntofxhibernate.Detalles">
+<top>
+<HBox id="idTop" alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="899.0" spacing="15.0" BorderPane.alignment="CENTER">
+    <children>
+        <ImageView fitHeight="55.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../media/culowing.com.png" />
+            </image>
+            <HBox.margin>
+                <Insets left="15.0" />
+            </HBox.margin>
+               <effect>
+                  <DropShadow height="30.36" offsetX="4.0" offsetY="4.0" radius="14.094999999999999" spread="0.09" width="28.02" />
+               </effect>
+        </ImageView>
+        <Label fx:id="dTitAplic" prefHeight="44.0" prefWidth="425.0" text="PeliculonAss">
+            <font>
+                <Font name="MV Boli" size="14.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="719.0">
+            <children>
+                  <Button fx:id="btnSalida" maxHeight="45.0" maxWidth="45.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" styleClass="salida">
+                     <graphic>
+                        <ImageView fx:id="salida" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="salida" />
+                     </graphic>
+                  </Button>
+                <Label fx:id="avUsuario" alignment="CENTER_RIGHT" prefHeight="18.0" styleClass="userReg" text="Usuario" HBox.hgrow="SOMETIMES">
+                    <HBox.margin>
+                        <Insets right="5.0" />
+                    </HBox.margin>
+                </Label>
+                  <ImageView fx:id="adminImg" disable="true" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../media/pedo%20admin.png" />
+                     </image>
+                  </ImageView>
+            </children>
+        </HBox>
+    </children>
+    <BorderPane.margin>
+        <Insets />
+    </BorderPane.margin>
+</HBox>
+</top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <Label prefHeight="38.0" prefWidth="320.0" styleClass="dsemitit" text="Detalles de la copia" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="45.0" top="40.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="SansSerif Regular" size="32.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <HBox BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="15.0" left="25.0" right="25.0" />
+               </BorderPane.margin>
+               <children>
+                  <StackPane fx:id="idContImgVideo">
+                     <children>
+                        <ImageView id="idDetPort" fx:id="idDetPort" fitHeight="377.0" fitWidth="323.0" pickOnBounds="true" preserveRatio="true" styleClass="portada">
+                           <image>
+                              <Image url="@../media/portadas/matrix.jpg" />
+                           </image>
+                        </ImageView>
+                        <MediaView fx:id="idDetVideo" fitHeight="387.0" fitWidth="320.0" scaleX="1.7" scaleY="1.7" styleClass="trailerVan" StackPane.alignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="NONE" />
+                           </cursor>
+                           <viewport>
+                              <Rectangle2D height="460.0" width="350.0" />
+                           </viewport>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </MediaView>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="30.0" right="45.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <GridPane prefHeight="575.0" prefWidth="906.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="445.20001220703125" minWidth="10.0" prefWidth="127.60003662109375" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="667.5999755859375" minWidth="10.0" prefWidth="361.1999633789062" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="378.8" minHeight="10.0" prefHeight="58.40001220703125" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="377.6000610351563" minHeight="0.0" prefHeight="66.39998779296874" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="364.0000061035156" minHeight="10.0" prefHeight="67.00000610351564" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="364.0000061035156" minHeight="10.0" prefHeight="72.79998779296878" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="364.0000061035156" minHeight="10.0" prefHeight="66.40000305175784" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="364.0000061035156" minHeight="10.0" prefHeight="71.199951171875" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="364.0000061035156" minHeight="10.0" prefHeight="59.999975585937534" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label styleClass="dpart" text="Título:">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="dpart" text="Género:" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="dpart" text="Año:" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="dpart" text="Descripción:" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="dpart" text="Director:" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="dpart" text="Estado:" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="dpart" text="Soporte:" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label id="dtitulo" fx:id="dtitulo" text="Label" GridPane.columnIndex="1" />
+                        <Label id="dgenero" fx:id="dgenero" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label id="daño" fx:id="daño" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label id="ddescripcion" fx:id="ddescripcion" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label id="ddirector" fx:id="ddirector" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label id="destado" fx:id="destado" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label id="dsoporte" fx:id="dsoporte" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="899.0" spacing="150.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="25.0" top="15.0" />
+         </BorderPane.margin>
+         <children>
+            <Button fx:id="atrassbtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="66.0" text="AtrAss" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

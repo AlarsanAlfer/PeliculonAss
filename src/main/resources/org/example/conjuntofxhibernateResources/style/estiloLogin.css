@@ -1,0 +1,128 @@
+.label {
+    -fx-font-family: "georgia";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333;
+    -fx-padding: 0 0 4px 0;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to right, #FFAA00, #FF7700);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 6px 11px;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 5, 0, 1, 1);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+    -fx-transform: scale(1);
+    -fx-border-color: #FF5500;
+    -fx-border-width: 1px;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #FF7700, #FFAA00);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0, 4, 4);
+    -fx-transform: scale(1.05);
+    -fx-translate-y: -2px;
+
+}
+.button:pressed {
+    -fx-background-color: linear-gradient(to right, #FF5F00, #FFAA00);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0, 1, 1);
+    -fx-transform: scale(0.95);
+}
+@keyframes slide-in {
+    0% { -fx-translate-y: -20px; opacity: 0; }
+    100% { -fx-translate-y: 0; opacity: 1; }
+}
+
+
+.txtfield, .passwordfield {
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: #d3d3d3;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 6px;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #999999;
+}
+
+.txtfield:focused {
+    -fx-border-color: #ff7700;
+    -fx-effect: dropshadow(gaussian, rgba(255, 119, 0, 0.5), 8, 0, 2, 2);
+}
+
+#olvidaPass {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2657ff;
+    -fx-underline: true;
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+    -fx-padding: 0px;
+    -fx-border-width: 0;
+    -fx-effect: none;
+}
+
+.heOlvidadoMiContrasena:hover {
+    -fx-cursor: hand;
+}
+
+@keyframes slide-in {
+    0% { -fx-translate-y: -20px; opacity: 0; }
+    100% { -fx-translate-y: 0; opacity: 1; }
+}
+
+
+#dRecordar {
+    -fx-border-color: #323232;
+    -fx-border-radius: 3px;
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 3px;
+    -fx-padding: 2px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, #666, 3, 0.5, 1, 1);
+    -fx-transition: all 0.2s ease;
+}
+
+#dRecordar:selected {
+    -fx-background-color: #ff973c;
+    -fx-border-color: #ff6f29;
+}
+
+#dRecordar:selected .text {
+    -fx-content-display: graphic-only;
+    -fx-background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cpath%20fill='white'%20stroke='%23ffffff'%20stroke-width='8'%20d='M20%2050%20L40%2070%20L80%2030'%3E%3C/path%3E%3C/svg%3E");
+    -fx-background-size: 60% 60%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+#dTituloLog {
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to right, #ff8335, #ffc74f,#ff8335 );
+    -fx-effect: dropshadow(gaussian, rgba(69, 69, 69, 0.9), 4, 0.5, 2, 3);
+}
+
+#titApp {
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to right, #bfbfbf, #ffffff, #bfbfbf);
+    -fx-effect: dropshadow(gaussian, rgba(69, 69, 69, 0.6), 4, 0.5, 0, 3),
+    dropshadow(gaussian, rgba(255, 255, 255, 0.3), 1, 0.1, 0, -1);
+}
+#vbox {
+    -fx-background-color: linear-gradient(to right, #ffc54a, #ffdb84);
+    -fx-background-image: url('../media/pngFondo.png');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: repeat;
+}
+
