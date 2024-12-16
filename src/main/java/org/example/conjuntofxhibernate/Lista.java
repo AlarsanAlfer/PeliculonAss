@@ -27,6 +27,7 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 import static org.example.conjuntofxhibernate.Principal.loadFXML;
+import static org.example.conjuntofxhibernate.dao.ReportService.generarInformeInfoPeliculas;
 
 public class Lista implements Initializable {
     @javafx.fxml.FXML
@@ -75,6 +76,8 @@ public class Lista implements Initializable {
     @FXML
     private ImageView adminImg;
     private MediaPlayer mp;
+    @FXML
+    private Button btnInforme;
 
 
     @Override
@@ -135,6 +138,8 @@ public class Lista implements Initializable {
         btnSalida.setOnMouseEntered(event -> salida.setImage(hoverImage));
         btnSalida.setOnMouseExited(event -> salida.setImage(normalImage));
         btnSalida.setOnAction(event -> cerrarSesion());
+        btnInforme.setOnAction(event -> loadFXML("/org/example/conjuntofxhibernateResources/views/informes-view.fxml","PeliculonAss", 800, 500));
+
     }
 
     private void cerrarSesion() {

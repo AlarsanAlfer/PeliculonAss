@@ -19,6 +19,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import static org.example.conjuntofxhibernate.Principal.loadFXML;
+import static org.example.conjuntofxhibernate.dao.ReportService.generarInformeDetalles;
 
 
 public class Detalles implements Initializable {
@@ -57,7 +58,8 @@ public class Detalles implements Initializable {
     @FXML
     private ImageView adminImg;
     private MediaPlayer mp;
-
+    @FXML
+    private Button btnInformeDetalles;
 
 
     @Override
@@ -82,7 +84,20 @@ public class Detalles implements Initializable {
 
 
         setCopia();
+
+        btnInformeDetalles.setOnAction(event -> generadoDetalles());
     };
+
+    public void generadoDetalles(){
+        generarInformeDetalles();
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Generación de informes");
+        alert.setHeaderText("Se ha generado el informe correctamente");
+        alert.setContentText("Puede encontrar el informe en la carpeta del proyecto en formato PDF");
+        alert.getDialogPane().getScene().getStylesheets().add(getClass().getResource("/org/example/conjuntofxhibernateResources/style/estiloLog.css").toExternalForm());
+        alert.showAndWait();
+    }
+
     private void cerrarSesion() {
         Media m = new Media(getClass().getResource("/org/example/conjuntofxhibernateResources/media/sonidos/CerrarSesion.mp3").toExternalForm());
         mp = new MediaPlayer(m);

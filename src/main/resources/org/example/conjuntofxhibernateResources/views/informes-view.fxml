@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/estiloDetalles.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.conjuntofxhibernate.Informes">
+<top>
+<HBox id="idTop" alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="899.0" spacing="15.0" BorderPane.alignment="CENTER">
+    <children>
+        <ImageView fitHeight="55.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../media/culowing.com.png" />
+            </image>
+            <HBox.margin>
+                <Insets left="15.0" />
+            </HBox.margin>
+            <effect>
+                <DropShadow height="30.36" offsetX="4.0" offsetY="4.0" radius="14.094999999999999" spread="0.09" width="28.02" />
+            </effect>
+        </ImageView>
+        <Label fx:id="dTitAplic" prefHeight="48.0" prefWidth="712.0" text="PeliculonAss">
+            <font>
+                <Font name="MV Boli" size="14.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="719.0">
+            <children>
+                <Button fx:id="btnSalida" maxHeight="45.0" maxWidth="45.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" styleClass="salida">
+                    <graphic>
+                        <ImageView fx:id="salida" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="salida" />
+                    </graphic>
+                </Button>
+                <Label fx:id="avUsuario" alignment="CENTER_RIGHT" prefHeight="18.0" styleClass="userReg" text="Usuario" HBox.hgrow="SOMETIMES">
+                    <HBox.margin>
+                        <Insets right="5.0" />
+                    </HBox.margin>
+                </Label>
+                <ImageView fx:id="adminImg" disable="true" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../media/pedo%20admin.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </children>
+    <BorderPane.margin>
+        <Insets />
+    </BorderPane.margin>
+</HBox>
+</top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="734.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+               <children>
+                  <Button fx:id="informePelis" mnemonicParsing="false" text="Generar listado de peliculas" />
+                  <Button fx:id="verInformePelis" mnemonicParsing="false" text="Visualizar" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+               <children>
+                  <Button fx:id="informeMal" mnemonicParsing="false" text="Generar listado de peliculas en mal estado" />
+                  <Button fx:id="verInformeMal" mnemonicParsing="false" text="Visualizar" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+               <children>
+                  <Button fx:id="informeMas" mnemonicParsing="false" text="Generar listado de películas con más de una copia" />
+                  <Button fx:id="verInformeMas" mnemonicParsing="false" text="Visualizar" />
+               </children>
+            </HBox>
+            <Button fx:id="btnAtras" mnemonicParsing="false" text="AtrAss">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

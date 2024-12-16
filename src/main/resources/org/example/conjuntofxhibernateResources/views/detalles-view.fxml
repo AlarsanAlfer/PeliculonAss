@@ -174,6 +174,7 @@
          </BorderPane.margin>
          <children>
             <Button fx:id="atrassbtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="66.0" text="AtrAss" />
+            <Button fx:id="btnInformeDetalles" mnemonicParsing="false" text="Generar informe" />
          </children>
       </HBox>
    </bottom>

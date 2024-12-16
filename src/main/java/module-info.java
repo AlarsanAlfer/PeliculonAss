@@ -7,6 +7,7 @@ module org.example.conjuntofxhibernate {
     requires org.hibernate.orm.core;
     requires jakarta.persistence;
     requires java.naming;
+    requires net.sf.jasperreports.core;
 
 
     opens org.example.conjuntofxhibernate to javafx.fxml;
@@ -15,3 +16,4 @@ module org.example.conjuntofxhibernate {
     //opens org.example.conjuntofxhibernate.models to javafx.fxml;
     opens org.example.conjuntofxhibernate.models to org.hibernate.orm.core;
 }
+

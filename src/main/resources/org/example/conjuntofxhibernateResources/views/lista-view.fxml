@@ -72,12 +72,13 @@
             </HBox>
          </top>
          <bottom>
-            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="902.0" spacing="90.0" style="-fx-background-color: fddd77;" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="902.0" spacing="70.0" style="-fx-background-color: fddd77;" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="añadirPbtn" mnemonicParsing="false" text="Añadir película" />
-                  <Button fx:id="añadirCbtn" mnemonicParsing="false" text="Añadir copia" />
+                  <Button fx:id="añadirPbtn" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" text="Añadir película" />
+                  <Button fx:id="añadirCbtn" mnemonicParsing="false" prefHeight="34.0" prefWidth="139.0" text="Añadir copia" />
                   <Button fx:id="modificarBtn" mnemonicParsing="false" prefHeight="27.0" prefWidth="164.0" text="Modificar copia" />
-                  <Button fx:id="deliminarbtn" mnemonicParsing="false" text="Eliminar copia" />
+                  <Button fx:id="deliminarbtn" mnemonicParsing="false" prefHeight="34.0" prefWidth="163.0" text="Eliminar copia" />
+                  <Button fx:id="btnInforme" mnemonicParsing="false" prefHeight="34.0" prefWidth="172.0" text="Ir a Informes" />
                </children>
             </HBox>
          </bottom>
